@@ -1,0 +1,2 @@
+# EJB
+Simple EJB Projects
