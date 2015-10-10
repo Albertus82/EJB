@@ -21,16 +21,20 @@ public class LoginSerlvet extends HttpServlet {
 
 	private static final long serialVersionUID = -1551226351925345173L;
 
+	private static final String LOGIN_JSP = "/WEB-INF/views/login.jsp";
+
 	private static final Log log = LogFactory.getLog(LoginSerlvet.class);
 
 	@EJB
 	private LoginService loginService;
 
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher rd = request.getRequestDispatcher("views/login.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher(LOGIN_JSP);
 		rd.forward(request, response);
 	}
 
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String username = request.getParameter("username").trim();
 		String password = request.getParameter("password").trim();
@@ -39,13 +43,13 @@ public class LoginSerlvet extends HttpServlet {
 		if (utente != null) {
 			log.info("Utente autenticato.");
 			request.getSession().setAttribute("utente", utente);
-			response.sendRedirect("home"); /* Redirect after POST */
+			response.sendRedirect(request.getContextPath() + "/secured/home"); /* Redirect after POST */
 		}
 		else {
 			request.setAttribute("messaggio", "Utenza non valida!");
-			RequestDispatcher rd = request.getRequestDispatcher("views/login.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher(LOGIN_JSP);
 			rd.forward(request, response); /* Forward con messaggio */
 		}
-
 	}
+
 }

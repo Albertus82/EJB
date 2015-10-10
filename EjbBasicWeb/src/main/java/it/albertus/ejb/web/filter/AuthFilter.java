@@ -11,17 +11,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebFilter("/*")
+@WebFilter("/secured/*")
 public class AuthFilter extends FilterAdapter {
-
-	private static final String LOGIN_URL = "login";
 
 	public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain chain) throws IOException, ServletException {
 		HttpServletRequest request = (HttpServletRequest) servletRequest;
 		HttpSession session = request.getSession(false);
-		if (!request.getRequestURI().endsWith("/" + LOGIN_URL) && (session == null || session.getAttribute("utente") == null)) {
+		if (session == null || session.getAttribute("utente") == null) {
 			HttpServletResponse response = (HttpServletResponse) servletResponse;
-			response.sendRedirect(LOGIN_URL);
+			response.sendRedirect(request.getContextPath() + "/login");
 		}
 		else {
 			chain.doFilter(servletRequest, servletResponse);
