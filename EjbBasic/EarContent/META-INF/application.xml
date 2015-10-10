@@ -2,12 +2,12 @@
 <application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd" id="Application_ID" version="6">
   <display-name>EjbBasic</display-name>
   <module>
-    <ejb>EjbBasicEJB.jar</ejb>
-  </module>
-  <module>
     <web>
       <web-uri>EjbBasicWeb.war</web-uri>
       <context-root>EjbBasicWeb</context-root>
     </web>
+  </module>
+  <module>
+    <ejb>EjbBasicBusiness.jar</ejb>
   </module>
 </application>

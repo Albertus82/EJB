@@ -3,8 +3,8 @@
 	<name>EjbBasic</name>
 	<comment></comment>
 	<projects>
-		<project>EjbBasicEJB</project>
 		<project>EjbBasicWeb</project>
+		<project>EjbBasicBusiness</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
