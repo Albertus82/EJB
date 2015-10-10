@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="EjbBasic">
-        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/" source-path="/ear"/>
         <dependent-module archiveName="EjbBasicWeb.war" deploy-path="/" handle="module:/resource/EjbBasicWeb/EjbBasicWeb">
             <dependent-object/>
             <dependency-type>uses</dependency-type>
