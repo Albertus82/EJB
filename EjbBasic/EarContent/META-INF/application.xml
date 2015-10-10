@@ -5,12 +5,6 @@
     <ejb>EjbBasicEJB.jar</ejb>
   </module>
   <module>
-    <java>EjbBasicClient.jar</java>
-  </module>
-  <module>
-    <connector>EjbBasicConnector.rar</connector>
-  </module>
-  <module>
     <web>
       <web-uri>EjbBasicWeb.war</web-uri>
       <context-root>EjbBasicWeb</context-root>

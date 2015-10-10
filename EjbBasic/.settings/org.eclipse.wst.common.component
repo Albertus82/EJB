@@ -5,14 +5,6 @@
             <dependent-object/>
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="EjbBasicClient.jar" deploy-path="/" handle="module:/resource/EjbBasicClient/EjbBasicClient">
-            <dependent-object/>
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="EjbBasicConnector.rar" deploy-path="/" handle="module:/resource/EjbBasicConnector/EjbBasicConnector">
-            <dependent-object/>
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <dependent-module archiveName="EjbBasicWeb.war" deploy-path="/" handle="module:/resource/EjbBasicWeb/EjbBasicWeb">
             <dependent-object/>
             <dependency-type>uses</dependency-type>

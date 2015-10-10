@@ -4,8 +4,6 @@
 	<comment></comment>
 	<projects>
 		<project>EjbBasicEJB</project>
-		<project>EjbBasicClient</project>
-		<project>EjbBasicConnector</project>
 		<project>EjbBasicWeb</project>
 	</projects>
 	<buildSpec>
