@@ -14,6 +14,7 @@ import javax.servlet.http.HttpSession;
 @WebFilter("/secured/*")
 public class AuthFilter extends FilterAdapter {
 
+	@Override
 	public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain chain) throws IOException, ServletException {
 		HttpServletRequest request = (HttpServletRequest) servletRequest;
 		HttpSession session = request.getSession(false);

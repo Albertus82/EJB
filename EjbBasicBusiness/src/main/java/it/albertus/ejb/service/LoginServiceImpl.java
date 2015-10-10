@@ -26,7 +26,7 @@ public class LoginServiceImpl implements LoginService {
 	public Utente auth(String username, String password) {
 		Utente utente = utenteDao.findUtenteByUsername(username);
 		if (utente != null && !utente.getPassword().equals(password)) {
-			log.warn("La password specificata non corrisponde con quella presente nel database.");
+			log.warn("La password specificata non coincide con quella presente nel database.");
 			utente = null;
 		}
 		return utente;

@@ -17,5 +17,9 @@
 			</h2>
 		</c:if>
 		
+		<form action="logout" method="POST">
+			<input type="submit" value="Logout" />
+		</form>
+		
 	</body>
 </html>

@@ -1,8 +1,11 @@
 package it.albertus.ejb.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Utente {
+public class Utente implements Serializable {
+
+	private static final long serialVersionUID = -2851476220628034410L;
 
 	private String username;
 	private transient String password;
