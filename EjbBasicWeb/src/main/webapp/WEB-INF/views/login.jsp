@@ -24,11 +24,11 @@
 			<table style="margin: auto;" cellpadding="4">
 				<tr>
 					<td>Username</td>
-					<td><input type="text" name="username" /></td>
+					<td><input type="text" name="username" maxlength="30" /></td>
 				</tr>
 				<tr>
 					<td>Password</td>
-					<td><input type="password" name="password" /></td>
+					<td><input type="password" name="password" maxlength="30" /></td>
 				</tr>
 				<tr>
 					<td colspan="2" style="text-align: center;">
