@@ -1,4 +1,4 @@
-package it.albertus.ejb.web;
+package it.albertus.ejb.web.servlet;
 
 import it.albertus.ejb.model.Utente;
 import it.albertus.ejb.service.LoginService;
@@ -17,11 +17,11 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 @WebServlet("/login")
-public class LoginController extends HttpServlet {
+public class LoginSerlvet extends HttpServlet {
 
 	private static final long serialVersionUID = -1551226351925345173L;
 
-	private static final Log log = LogFactory.getLog(LoginController.class);
+	private static final Log log = LogFactory.getLog(LoginSerlvet.class);
 
 	@EJB
 	private LoginService loginService;

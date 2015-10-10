@@ -1,4 +1,4 @@
-package it.albertus.ejb.web;
+package it.albertus.ejb.web.servlet;
 
 import java.io.IOException;
 
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/home")
-public class HomeController extends HttpServlet {
+public class HomeServlet extends HttpServlet {
 
 	private static final long serialVersionUID = -1484498917538379888L;
 
