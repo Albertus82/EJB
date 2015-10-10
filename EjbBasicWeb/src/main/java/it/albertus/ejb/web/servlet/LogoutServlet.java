@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-@WebServlet({ "/logout", "/secured/logout" })
+@WebServlet("/logout")
 public class LogoutServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 6788461013066837184L;

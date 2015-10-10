@@ -17,7 +17,7 @@
 			</h2>
 		</c:if>
 		
-		<form action="logout" method="POST">
+		<form action="${pageContext.request.contextPath}/logout" method="POST">
 			<input type="submit" value="Logout" />
 		</form>
 		
