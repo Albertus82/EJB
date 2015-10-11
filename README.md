@@ -1,7 +1,7 @@
 # EJB
 Piccoli progetti esemplificativi di alcune delle funzionalità degli EJB, testati con **WildFly 8.2.1**. Richiedono la dichiarazione di un datasource **MyDataSource** nell'application server.
 
-Per dichiarare un datasource Oracle, aggiungere al file **standalone.xml** di **WildFly** i seguenti elementi `datasource` e `driver` nei rispettivi contenitori `datasources` e `drivers` gi&agrave; esistenti, modificando ovviamente i parametri a seconda della propria configurazione:
+Per dichiarare un datasource Oracle, aggiungere al file **`standalone.xml`** di **WildFly** i seguenti elementi **`datasource`** e **`driver`** nei rispettivi contenitori `datasources` e `drivers` preesistenti, modificando ovviamente i parametri a seconda della propria configurazione:
 
 ```xml
 <datasources>
@@ -27,7 +27,7 @@ Per dichiarare un datasource Oracle, aggiungere al file **standalone.xml** di **
 </datasources>
 ```
 
-Creare quindi un'alberatura `modules\system\layers\base\oracle\main` nella directory dell'application server e copiarvi la libreria JDBC di Oracle (tipicamente `ojdbc14.jar` o `ojbc6.jar`). Aggiungere infine un file `module.xml` del tipo seguente:
+Creare quindi un'alberatura `modules\system\layers\base\oracle\main` nella directory dell'application server e copiarvi la libreria JDBC di Oracle (tipicamente `ojdbc14.jar` o `ojbc6.jar`). Aggiungere infine un file **`module.xml`** del tipo seguente:
 
 ```xml
 <module xmlns="urn:jboss:module:1.1" name="oracle">
