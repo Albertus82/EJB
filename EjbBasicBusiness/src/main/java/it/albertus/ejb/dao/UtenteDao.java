@@ -4,6 +4,8 @@ import it.albertus.ejb.model.Utente;
 
 public interface UtenteDao {
 
-	Utente findUtenteByUsername(String username);
+	Utente findById(String username);
+
+	boolean save(Utente utente);
 
 }

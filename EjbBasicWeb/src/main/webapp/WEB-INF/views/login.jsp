@@ -24,15 +24,15 @@
 			<table style="margin: auto;" cellpadding="4">
 				<tr>
 					<td>Username</td>
-					<td><input type="text" name="username" maxlength="30" /></td>
+					<td><input type="text" name="username" maxlength="50" /></td>
 				</tr>
 				<tr>
 					<td>Password</td>
-					<td><input type="password" name="password" maxlength="30" /></td>
+					<td><input type="password" name="password" maxlength="50" /></td>
 				</tr>
 				<tr>
 					<td colspan="2" style="text-align: center;">
-						<input type="submit" value="Accedi" style="width: 100%;" />
+						<input type="submit" value="Accedi" style="width: 45%;" /> | <input type="button" value="Registrati" style="width: 45%;" onclick="location.href='register'" />
 					</td>
 				</tr>
 			</table>
