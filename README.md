@@ -27,7 +27,7 @@ Per dichiarare un datasource Oracle, aggiungere al file **`standalone.xml`** di 
 </datasources>
 ```
 
-Creare quindi un'alberatura `modules\system\layers\base\oracle\main` nella directory dell'application server e copiarvi la libreria JDBC di Oracle (tipicamente `ojdbc14.jar` o `ojbc6.jar`). Aggiungere infine un file **`module.xml`** del tipo seguente:
+Creare quindi un'alberatura `modules\system\layers\base\oracle\main` nella directory dell'application server e copiarvi la libreria JDBC di Oracle (tipicamente `ojdbc14.jar` o `ojbc6.jar`). Aggiungere infine, sempre in questa stessa directory, un file **`module.xml`** del tipo seguente:
 
 ```xml
 <module xmlns="urn:jboss:module:1.1" name="oracle">
