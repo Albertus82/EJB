@@ -20,7 +20,7 @@ Per dichiarare un datasource Oracle, aggiungere al file **`standalone.xml`** di 
 		</security>
 	</datasource>
 	<drivers>
-		<driver name="oracle" module="com.oracle">
+		<driver name="oracle" module="oracle">
 			<driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
 		</driver>
 	</drivers>
