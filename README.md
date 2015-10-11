@@ -16,7 +16,7 @@ Per dichiarare un datasource Oracle, aggiungere al file **`standalone.xml`** di 
 		</pool>
 		<security>
 			<user-name>db_username</user-name>
-			<password>db_username</password>
+			<password>db_password</password>
 		</security>
 	</datasource>
 	<drivers>
