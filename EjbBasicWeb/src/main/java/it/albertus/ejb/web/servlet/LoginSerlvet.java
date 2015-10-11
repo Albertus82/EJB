@@ -46,7 +46,7 @@ public class LoginSerlvet extends HttpServlet {
 			response.sendRedirect(request.getContextPath() + "/secured/home"); /* Redirect after POST */
 		}
 		else {
-			request.setAttribute("messaggio", "Utenza non valida!");
+			request.setAttribute("message", "Accesso non riuscito!");
 			RequestDispatcher rd = request.getRequestDispatcher(LOGIN_JSP);
 			rd.forward(request, response); /* Forward con messaggio */
 		}
