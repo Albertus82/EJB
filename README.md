@@ -1,5 +1,5 @@
 # EJB
-Piccoli progetti esemplificativi di alcune delle funzionalità degli EJB, testati con **WildFly 8.2.1**. &Egrave richiesta la dichiarazione di un datasource **MyDataSource** nell'application server.
+Piccoli progetti esemplificativi di alcune delle funzionalità degli EJB, testati con **WildFly 8.2.1**. &Egrave; richiesta la dichiarazione di un datasource **MyDataSource** nell'application server.
 
 Per dichiarare un datasource Oracle, aggiungere al file **`standalone.xml`** di **WildFly** i seguenti elementi **`datasource`** e **`driver`** nei rispettivi contenitori `datasources` e `drivers` preesistenti, modificando ovviamente i parametri a seconda della propria configurazione:
 
