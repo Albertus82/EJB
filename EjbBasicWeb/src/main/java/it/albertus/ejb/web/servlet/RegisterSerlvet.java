@@ -27,7 +27,7 @@ public class RegisterSerlvet extends HttpServlet {
 
 	public enum RegistrationError {
 		CAMPI_OBBLIGATORI("Uno o pi\u00F9 campi obbligatori non risultano compilati."),
-		FORMATO_DATA("Data di nascita non formattata correttamente."),
+		FORMATO_DATA("Data di nascita non formattata correttamente. Formato atteso: gg/mm/aaaa."),
 		UTENTE_ESISTENTE("Username gi\u00E0 in uso.");
 
 		private RegistrationError(String message) {

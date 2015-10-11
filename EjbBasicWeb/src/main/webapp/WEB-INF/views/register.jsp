@@ -12,7 +12,7 @@
 
 		<!-- Eventuali errori -->
 		<c:if test="${not empty requestScope.errors}">
-			<ul style="color:red; text-align:center; margin:1em;">
+			<ul style="color:red; text-align:center; margin:1em; list-style-type:none; line-height:150%;">
 				<c:forEach items="${errors}" var="error">
 					<li>${error.message}</li>
 				</c:forEach>
